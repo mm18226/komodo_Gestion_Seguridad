@@ -15,23 +15,27 @@ class Empleado {
     Departamento departamento   
     Municipio municipio
     PuestoTrabajo puesto
-    AreaTrabajo area
-   
+    AreaTrabajo area  
+
     
     static constraints = {
         nombres blank:false,matches:"[a-zA-Z-' ']+"
         apellidos blank:false,matches:"[a-zA-Z-' ']+"
         genero blank:false,matches:"[a-zA-Z-' ']+"
         estadoCivil blank:false,matches:"[a-zA-Z-' ']+"
-        fechaNacimiento blank:false
-        departamento blank:false
-        municipio blank:false
+        fechaNacimiento blank:false 
+        departamento  blank:false
+        municipio  blank:false 
         dui blank:false,matches:"[0-9]{9}"
         iss blank:false,matches:"[0-9]{9}"
         nup blank:false,matches:"[0-9]{13}"
-        area blank:false
-        puesto blank:false
+        area  blank:false
+        puesto  blank:false
         salario blank:false
         
+    }
+    static mapping={
+        table 'empleado'
+        version false
     }
 }

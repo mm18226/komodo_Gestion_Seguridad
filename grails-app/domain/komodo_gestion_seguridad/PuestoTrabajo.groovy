@@ -7,5 +7,12 @@ class PuestoTrabajo {
     AreaTrabajo area
     
     static constraints = {
+        nombre(nullable:false, blank:false)
+    }
+    static mapping={
+        version false
+    }
+    String toString(){
+        "${nombre}"
     }
 }
