@@ -1,8 +1,5 @@
 package komodo_gestion_seguridad
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 
 class Municipio {
 
@@ -11,6 +8,7 @@ class Municipio {
     String nombre
     
     //Datos que son clases
+    static belongsTo =[departamento:Departamento]
         
     static constraints = {
         nombre blank:false

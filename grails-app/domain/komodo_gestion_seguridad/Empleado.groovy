@@ -12,7 +12,7 @@ class Empleado {
     String iss
     String nup    
  //Datos del empleado que son otras clases        
-    Departamento departamento    
+    Departamento departamento 
     Municipio municipio
     String direccion
     PuestoTrabajo puesto
