@@ -11,9 +11,10 @@ class Empleado {
     String dui
     String iss
     String nup    
- //Datos del empleado que son otras clases    
-    Departamento departamento   
+ //Datos del empleado que son otras clases        
+    Departamento departamento    
     Municipio municipio
+    String direccion
     PuestoTrabajo puesto
     AreaTrabajo area  
 
@@ -26,6 +27,7 @@ class Empleado {
         fechaNacimiento blank:false 
         departamento  blank:false
         municipio  blank:false 
+        direccion blank:false
         dui blank:false,matches:"[0-9]{9}"
         iss blank:false,matches:"[0-9]{9}"
         nup blank:false,matches:"[0-9]{13}"

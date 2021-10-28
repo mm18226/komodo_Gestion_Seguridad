@@ -1,5 +1,5 @@
 package komodo_gestion_seguridad
-package dropdown
+
 
 class Municipio {
 
@@ -8,8 +8,7 @@ class Municipio {
     String nombre
     
     //Datos que son clases
-    static belongTo = Departamento
-    
+        
     static constraints = {
         nombre blank:false
     }

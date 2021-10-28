@@ -1,5 +1,5 @@
 package komodo_gestion_seguridad
-package dropdown
+
 
 class Departamento {
 
@@ -8,10 +8,11 @@ class Departamento {
     String nombre
   
     //Datos que son clases
-    static hasMany = [municipio:Municipio]
+    static hasMany = [municipios:Municipio]
         
     static constraints = {
         nombre  blank:false
+        municipios blank:false
     }
     static mapping={
         table 'departamento'
