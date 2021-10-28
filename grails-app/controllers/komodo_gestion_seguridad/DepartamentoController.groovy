@@ -7,8 +7,7 @@ class DepartamentoController {
 
     DepartamentoService departamentoService
     
-    //para especifico municipio
-    static scaffold = Departamento
+
 
 
     def index(Integer max) {
@@ -20,14 +19,7 @@ class DepartamentoController {
         respond departamentoService.get(id)
     }
 
-//mostrar especifico
-def dynamicDropdown = {
-  }
 
-  def findMunicipioForDepartamento = {
-    def departamento = Departamento.get(params.departamento.id)
-    render(template: 'municipioSelection', model:  [municipio: departamento.municipio])
-  }
 
     protected void notFound() {
         request.withFormat {

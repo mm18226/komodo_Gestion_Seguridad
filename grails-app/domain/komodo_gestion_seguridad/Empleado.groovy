@@ -26,7 +26,7 @@ class Empleado {
         estadoCivil blank:false,matches:"[a-zA-Z-' ']+"
         fechaNacimiento blank:false 
         departamento  blank:false
-        municipio  blank:false 
+        municipio  blank:false
         direccion blank:false
         dui blank:false,matches:"[0-9]{9}"
         iss blank:false,matches:"[0-9]{9}"

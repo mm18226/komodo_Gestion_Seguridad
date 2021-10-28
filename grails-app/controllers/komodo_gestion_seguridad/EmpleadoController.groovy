@@ -7,6 +7,7 @@ class EmpleadoController {
 
     EmpleadoService empleadoService
 
+
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
@@ -86,6 +87,7 @@ class EmpleadoController {
             '*'{ render status: NO_CONTENT }
         }
     }
+    
 
     protected void notFound() {
         request.withFormat {
