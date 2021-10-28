@@ -1,5 +1,8 @@
 package komodo_gestion_seguridad
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 class Departamento {
 

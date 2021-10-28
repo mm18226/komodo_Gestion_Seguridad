@@ -1,6 +1,9 @@
 package komodo_gestion_seguridad
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
 

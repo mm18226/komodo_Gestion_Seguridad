@@ -14,7 +14,6 @@ class MunicipioController {
     }
 
     def show(Long id) {
-        id = departamentoService.get(id)
         respond municipioService.get(id)
     }
 
